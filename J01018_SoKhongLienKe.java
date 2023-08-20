@@ -7,7 +7,7 @@ public class J01018_SoKhongLienKe {
             if (Math.abs(s.charAt(i) - s.charAt(i+1)) != 2) return "NO";
             cnt += s.charAt(i) -'0';
         }
-        cnt += s.charAt(s.length()-1);
+        cnt += s.charAt(s.length()-1) - '0';
         if (cnt % 10 != 0) return "NO";
         return "YES";
     }
